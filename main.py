@@ -52,7 +52,8 @@ def parse_table_info(driver):
     return tables
 
 def save_tables(tables):
-    with open("output/tables.json", "w", encoding="utf-8") as f:
+    with open("/mnt/data/tables.json", "w", encoding="utf-8") as f:
+
         json.dump(tables, f, ensure_ascii=False, indent=2)
 
 def main():
